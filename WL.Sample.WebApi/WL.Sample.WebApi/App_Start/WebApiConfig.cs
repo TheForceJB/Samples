@@ -14,6 +14,9 @@ namespace WL.Sample.WebApi
             // Web API 路由
             config.MapHttpAttributeRoutes();
 
+            //Enable CORS
+            config.EnableCors();
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{action}/{id}",

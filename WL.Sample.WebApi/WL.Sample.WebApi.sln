@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WL.Sample.Model", "WL.Sampl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{5E29BA49-F1D9-4657-ADD9-CA536B4782DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WL.Sample.Web", "WL.Sample.Web\WL.Sample.Web.csproj", "{0870A6F5-EA32-4A5A-B107-AAB8F4BEBAC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WL.Sample.Console", "WL.Sample.Console\WL.Sample.Console.csproj", "{A6CD0415-0E03-47E0-A521-964FFCE69370}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,14 @@ Global
 		{DAF1F73F-A433-4B1A-AD07-952332FE916A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAF1F73F-A433-4B1A-AD07-952332FE916A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAF1F73F-A433-4B1A-AD07-952332FE916A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0870A6F5-EA32-4A5A-B107-AAB8F4BEBAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0870A6F5-EA32-4A5A-B107-AAB8F4BEBAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0870A6F5-EA32-4A5A-B107-AAB8F4BEBAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0870A6F5-EA32-4A5A-B107-AAB8F4BEBAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6CD0415-0E03-47E0-A521-964FFCE69370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6CD0415-0E03-47E0-A521-964FFCE69370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6CD0415-0E03-47E0-A521-964FFCE69370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6CD0415-0E03-47E0-A521-964FFCE69370}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9D719895-A1DD-4415-986D-9BBCF7C05C4E} = {5E29BA49-F1D9-4657-ADD9-CA536B4782DD}
 		{DAF1F73F-A433-4B1A-AD07-952332FE916A} = {20DB4D23-797A-4016-8159-1988C8ADF77F}
+		{0870A6F5-EA32-4A5A-B107-AAB8F4BEBAC5} = {5E29BA49-F1D9-4657-ADD9-CA536B4782DD}
+		{A6CD0415-0E03-47E0-A521-964FFCE69370} = {5E29BA49-F1D9-4657-ADD9-CA536B4782DD}
 	EndGlobalSection
 EndGlobal

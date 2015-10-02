@@ -4,12 +4,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.OData;
 using WL.Sample.Model;
 using WL.Sample.Model.Model;
 
 namespace WL.Sample.WebApi.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class AdController : ApiController
     {
         [HttpGet]
@@ -32,9 +34,10 @@ namespace WL.Sample.WebApi.Controllers
             return "value";
         }
 
-        // POST api/values
-        public void Post([FromBody]string value)
+        [HttpPost]
+        public HttpResponseMessage Post(AdUser adUser)
         {
+            return new HttpResponseMessage(HttpStatusCode.Created);
         }
 
         // PUT api/values/5
