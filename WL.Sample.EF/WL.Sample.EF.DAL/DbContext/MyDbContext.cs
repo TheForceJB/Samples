@@ -15,11 +15,21 @@ namespace WL.Sample.EF.DAL
         {
         }
 
+
+        public DbSet<SysEmployee> SysEmployees { get; set; }
+        public DbSet<SysFunction> SysFunctions { get; set; }
+        public DbSet<SysRole> SysRoles { get; set; }
+        public DbSet<SysFunctionRole> SysFunctionRoles { get; set; }
+        public DbSet<SysEmployeeRole> SysEmployeeRoles { get; set; }
+
+
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             try
             {
-                ///Department 一對多 User
+                //Department 一對多 User
                 modelBuilder.Entity<Department>().HasMany(m => m.User).WithRequired(m => m.Department);
 
             }

@@ -54,8 +54,21 @@
     <Compile Include="Migrations\201510290127129_IntialCreate.Designer.cs">
       <DependentUpon>201510290127129_IntialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511050106012_PermissionSample.cs" />
+    <Compile Include="Migrations\201511050106012_PermissionSample.Designer.cs">
+      <DependentUpon>201511050106012_PermissionSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511050109091_PermissionSampleUpdate.cs" />
+    <Compile Include="Migrations\201511050109091_PermissionSampleUpdate.Designer.cs">
+      <DependentUpon>201511050109091_PermissionSampleUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Department.cs" />
+    <Compile Include="Model\SysEmployee.cs" />
+    <Compile Include="Model\SysEmployeeSysRole.cs" />
+    <Compile Include="Model\SysFunction.cs" />
+    <Compile Include="Model\SysFunctionRole.cs" />
+    <Compile Include="Model\SysRole.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\IDalService.cs" />
@@ -67,6 +80,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201510290127129_IntialCreate.resx">
       <DependentUpon>201510290127129_IntialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511050106012_PermissionSample.resx">
+      <DependentUpon>201511050106012_PermissionSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511050109091_PermissionSampleUpdate.resx">
+      <DependentUpon>201511050109091_PermissionSampleUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
