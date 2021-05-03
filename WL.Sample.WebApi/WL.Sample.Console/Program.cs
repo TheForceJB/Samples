@@ -25,6 +25,8 @@ namespace WL.Sample.Console
                    new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
             var msg = String.Empty;
+
+            // Send request
             HttpResponseMessage resp = httpClient.GetAsync(apiUrl).Result;
             if (resp.IsSuccessStatusCode)
             {
