@@ -26,7 +26,7 @@ namespace WL.Sample.Console
 
             var msg = String.Empty;
 
-            // Send request
+            // Send request and get response
             HttpResponseMessage resp = httpClient.GetAsync(apiUrl).Result;
             if (resp.IsSuccessStatusCode)
             {
